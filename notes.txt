@@ -1,0 +1,23 @@
+1. Cartpole = Q-learning & DQN.
+    Questions:- Stopping criterion (When to consider it as solved?),
+                Reward aggregation across episodes (How is it distributed?),
+                How to define stability of a solution? Dampen the reward fluctuations?,
+                Number of time-steps in each episode?,
+                Cumulative reward vs no. of timesteps plot?,
+                Design "Pseudo-reward function" = Main reward function + reward history + encourage episode level reward stability.
+2. Lunar lander = DQN
+    Questions:- How to deal with the hovering (skips the penalty) issue?,
+                REINFORCE algorithm vs DQN?,
+                Try changing weights update frequency (no. of time steps) in DQN?
+3. Half Cheetah = PPO
+    Questions:- How PPO works?,
+                Stable-baselines3 MLPPolicy?
+
+27/09/2022:- Understood more about the half cheetah environment. Understood difference between value-based algos and policy-based algos.
+             Reward threshold is 4800. Episode ending is 1000 timesteps.
+             Benchmarks showed they reached around 10000-15000 reward in 3M timesteps.
+             With PPO, after 1M steps, only 1500 reward achieved.
+             For some reason, the cheetah is doing a flipping motion during the start of the episode and it tried to continue going forward
+             in the inverted position.
+             Took way too long to run in the 'cpu' mode for 1M timesteps.
+
