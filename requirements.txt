@@ -8,3 +8,7 @@ imageio
 stable-baselines3
 pyglet
 mujoco-py<2.2,>=2.1
+ipython
+matplotlib
+pandas
+tensorflow

@@ -20,4 +20,8 @@
              For some reason, the cheetah is doing a flipping motion during the start of the episode and it tried to continue going forward
              in the inverted position.
              Took way too long to run in the 'cpu' mode for 1M timesteps.
+             For some reason, the reward with ppo is very less compared to DDPG, TD3, SAC, VPG according the benchmarks from here. https://spinningup.openai.com/en/latest/spinningup/bench.html
+             [Generate graph, video for ppo as well]
+             [Add checkpoint callback - saving model, saving video, saving rewards with monitor (no need of callback for this one)]
+             [Show graph for car racing as well]
 
