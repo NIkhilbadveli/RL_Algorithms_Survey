@@ -12,3 +12,4 @@ ipython
 matplotlib
 pandas
 tensorflow
+sb3-contrib
